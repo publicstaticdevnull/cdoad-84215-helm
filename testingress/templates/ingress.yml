@@ -5,6 +5,7 @@ metadata:
   name: apple-app
   labels:
     app: apple
+    data: {{ .Values.my.data }}
 spec:
   containers:
     - name: apple-app
@@ -18,6 +19,7 @@ metadata:
   name: banana-app
   labels:
     app: banana
+    data: {{ .Values.my.data }}
 spec:
   containers:
     - name: banana-app
